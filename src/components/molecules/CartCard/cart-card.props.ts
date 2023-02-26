@@ -5,4 +5,5 @@ export interface CartCardProps {
   description?: string | null;
   price: number;
   onDelete: () => void;
+  id: string;
 }

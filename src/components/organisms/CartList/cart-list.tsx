@@ -9,6 +9,7 @@ export const CartList = ({cart}: CartListProps) => {
       keyExtractor={item => item.id}
       renderItem={({item}) => (
         <CartCard
+          id={item.id}
           name={item.name}
           description={item.about}
           price={item.price}
