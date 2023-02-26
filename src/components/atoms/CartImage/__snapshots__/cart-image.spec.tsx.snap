@@ -2,6 +2,8 @@
 
 exports[`<CartImage /> tests should be able to match with snapshot 1`] = `
 <Image
+  onError={[Function]}
+  resizeMode="cover"
   source={
     {
       "testUri": "../../../src/assets/pizza.png",
@@ -9,7 +11,11 @@ exports[`<CartImage /> tests should be able to match with snapshot 1`] = `
   }
   style={
     [
-      {},
+      {
+        "borderRadius": 16,
+        "height": 249,
+        "width": 249,
+      },
     ]
   }
 />

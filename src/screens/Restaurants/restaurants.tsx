@@ -21,8 +21,6 @@ export const Restaurants = observer(() => {
     requestPolicy: 'network-only',
   });
 
-  console.log(data);
-
   return (
     <>
       <RestaurantsTemplate address={address} restaurants={data?.restaurants} />

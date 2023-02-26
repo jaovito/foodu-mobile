@@ -12,6 +12,7 @@ const FoodModel = types.model({
     FoodSize.Medium,
     FoodSize.Big,
   ]),
+  counter: types.optional(types.number, 1),
   about: nullOrUndefined(types.string),
   created_at: types.string,
   updated_at: types.string,
@@ -26,7 +27,8 @@ const FoodModel = types.model({
 const FoodModelMap = types.map(FoodModel);
 
 interface ICartFoodSnapshotIn extends Instance<typeof FoodModel> {}
-interface ICartFoodMapSnapshotIn extends Instance<typeof FoodModelMap> {}
+export interface ICartFoodMapSnapshotIn extends Instance<typeof FoodModelMap> {}
+export interface IFoodModel extends Instance<typeof FoodModel> {}
 
 export const CartModel = types
   .model({
@@ -49,8 +51,8 @@ export const CartModel = types
       self.foods = foodObjects;
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(foodObjects));
     }),
-    addToCart: flow(function* (food: Food) {
-      self.foods.set(food.id, food);
+    addToCart: flow(function* (food: Food, counter: number) {
+      self.foods.set(food.id, {...food, counter});
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(self.foods));
     }),
     removeFood: flow(function* (id: string) {

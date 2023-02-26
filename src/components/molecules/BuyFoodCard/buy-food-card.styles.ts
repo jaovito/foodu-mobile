@@ -4,9 +4,10 @@ import {Text} from '@components/atoms/Text';
 import Feather from 'react-native-vector-icons/Feather';
 
 import {RFValue} from 'react-native-responsive-fontsize';
+import {TouchableOpacity, Image as RNImage} from 'react-native';
 
-export const Container = styled.TouchableOpacity`
-  width: ${RFValue(155)}px;
+export const Container = styled(TouchableOpacity)`
+  width: 100%;
 
   align-items: center;
   justify-content: center;
@@ -15,7 +16,7 @@ export const Container = styled.TouchableOpacity`
   border: 2px solid rgba(0, 0, 0, 0.1);
 `;
 
-export const Image = styled.Image`
+export const Image = styled(RNImage)`
   width: 100%;
   height: ${RFValue(100)}px;
 

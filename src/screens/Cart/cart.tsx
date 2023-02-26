@@ -1,17 +1,18 @@
 import React from 'react';
-import {CartCard} from '@components/molecules/CartCard';
-import {View} from 'react-native';
+import {CartList} from '@components/organisms/CartList/cart-list';
+import {store} from '@store/index';
+import {Container} from './cart.styles';
 
 export const Cart = () => {
+  const {
+    cart: {allFoods},
+  } = store;
+
+  console.log({allFoods});
+
   return (
-    <View style={{padding: 24}}>
-      <CartCard
-        name="Chicken burger"
-        description="lorem ipsum dolor sit amet dolor sit amet al metus in diam non pro id vel"
-        price={20}
-        counter={1}
-        image="http://github.com/jaovito.png"
-      />
-    </View>
+    <Container>
+      <CartList cart={allFoods} />
+    </Container>
   );
 };

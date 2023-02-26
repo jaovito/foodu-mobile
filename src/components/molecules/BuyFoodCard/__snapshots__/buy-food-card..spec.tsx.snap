@@ -38,7 +38,7 @@ exports[`BuyFoodCard tests should match with snapshot 1`] = `
       "borderWidth": 2,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 304,
+      "width": "100%",
     }
   }
 >

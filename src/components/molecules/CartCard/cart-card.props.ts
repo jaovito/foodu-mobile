@@ -1,7 +1,8 @@
 export interface CartCardProps {
-  image: string;
+  image?: string;
   counter: number;
   name: string;
-  description: string;
+  description?: string | null;
   price: number;
+  onDelete: () => void;
 }

@@ -1,5 +1,5 @@
 import {TextProps} from '@components/atoms/Text/text.props';
-import {ImageProps, TouchableOpacityProps} from 'react-native/types';
+import {ImageProps, TouchableOpacityProps} from 'react-native';
 
 export interface BuyFoodCardProps extends TouchableOpacityProps {
   /**

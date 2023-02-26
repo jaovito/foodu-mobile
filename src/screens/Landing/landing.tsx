@@ -10,7 +10,6 @@ export const Landing = ({}: LandingProps) => {
   const navigation = useNavigate();
 
   function handleGoSignIn() {
-    console.log('foi');
     navigation.navigate('SignIn');
   }
 

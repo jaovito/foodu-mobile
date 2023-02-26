@@ -24,6 +24,7 @@ export const CartCard = ({
   description,
   name,
   price,
+  onDelete,
 }: CartCardProps) => {
   const [foodCounter, setFoodCounter] = useState(counter);
 
@@ -67,11 +68,24 @@ export const CartCard = ({
           <Price>${Number(price * foodCounter || 0).toFixed(2)}</Price>
 
           <ActionButtons>
-            <PrimaryButton iconName="minus" onPress={handleDecrementCounter} />
-            <PrimaryButton iconName="plus" onPress={handleIncrementCounter} />
+            <PrimaryButton
+              testID="DecrementCounterButtonID"
+              iconName="minus"
+              onPress={handleDecrementCounter}
+            />
+            <PrimaryButton
+              testID="IncrementCounterButtonID"
+              iconName="plus"
+              onPress={handleIncrementCounter}
+            />
 
             {foodCounter <= 10 && (
-              <PrimaryButton iconName="trash" color="red" />
+              <PrimaryButton
+                testID="DeleteCartButtonID"
+                onPress={onDelete}
+                iconName="trash"
+                color="red"
+              />
             )}
           </ActionButtons>
         </PriceContainer>

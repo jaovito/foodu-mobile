@@ -1,7 +1,6 @@
 import React from 'react';
-import {BuyFoodCard} from '@components/molecules/BuyFoodCard';
 import {FoodColumnListProps} from './food-column-list.props';
-import {Container} from './food-column-list.styles';
+import {Container, BuyFoodCard} from './food-column-list.styles';
 
 export const FoodColumnList = ({foods, onPress}: FoodColumnListProps) => {
   return (

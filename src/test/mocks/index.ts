@@ -9,6 +9,7 @@ import {restaurantCard} from './components/molecules/restaurant-card.mock';
 import {locationValidator} from './validators/location-validator.mock';
 import {loginValidator} from './validators/login-validator.mock';
 import {cartStore} from './store/cart.mock';
+import {cartCard} from './components/molecules/cart-card.mock';
 
 export const mock = {
   buyFoodCard,
@@ -22,4 +23,5 @@ export const mock = {
   map,
   foodColumnList,
   cartStore,
+  cartCard,
 };

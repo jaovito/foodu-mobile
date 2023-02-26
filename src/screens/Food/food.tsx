@@ -29,10 +29,13 @@ export const Food = () => {
 
   const handleAddFoodToCart = useCallback(async () => {
     if (foodQuery.data?.food) {
-      cart.addToCart({
-        ...(foodQuery.data?.food as IFood),
-        price: foodQuery.data.food.price * counter,
-      });
+      cart.addToCart(
+        {
+          ...(foodQuery.data?.food as IFood),
+          price: foodQuery.data.food.price * counter,
+        },
+        counter,
+      );
       return goBack();
     }
 
