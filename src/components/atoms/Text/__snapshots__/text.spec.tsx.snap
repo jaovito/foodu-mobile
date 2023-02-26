@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Tests should match with snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#0D0D0D",
+        "fontFamily": "Poppins_400Regular",
+        "fontSize": 31,
+      },
+    ]
+  }
+>
+  John doe
+</Text>
+`;

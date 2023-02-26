@@ -1,0 +1,481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`organism/FoodColumnList Tests should match snapshot with foods 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    {
+      "margin": 27,
+    }
+  }
+  data={
+    [
+      {
+        "created_at": 2023-02-24T17:35:15.681Z,
+        "energy": "100 KCal",
+        "id": "1",
+        "name": "Chicken Burguer",
+        "price": 100,
+        "size": "BIG",
+        "updated_at": 2023-02-24T17:35:15.681Z,
+      },
+      {
+        "created_at": 2023-02-24T17:35:15.681Z,
+        "energy": "120 KCal",
+        "id": "2",
+        "name": "Simple Burguer",
+        "price": 120,
+        "size": "BIG",
+        "updated_at": 2023-02-24T17:35:15.681Z,
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    [
+      {},
+    ]
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "space-between",
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "borderColor": "rgba(0, 0, 0, 0.1)",
+              "borderRadius": 16,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": 304,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              {
+                "testUri": "../../../src/assets/defaultChef.png",
+              }
+            }
+            style={
+              [
+                {
+                  "borderTopLeftRadius": 12,
+                  "borderTopRightRadius": 12,
+                  "height": 196,
+                  "width": "100%",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {},
+              ]
+            }
+          >
+            <Text
+              fontWeight="semiBold"
+              style={
+                [
+                  {
+                    "color": "#0D0D0D",
+                    "fontFamily": "Poppins_600SemiBold",
+                    "fontSize": 31,
+                  },
+                  {
+                    "fontSize": 29,
+                    "lineHeight": 35,
+                    "marginTop": 16,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                  },
+                ]
+              }
+            >
+              Chicken Burguer
+            </Text>
+            <Text
+              numberOfLines={2}
+              style={
+                [
+                  {
+                    "color": "#0D0D0D",
+                    "fontFamily": "Poppins_400Regular",
+                    "fontSize": 31,
+                  },
+                  {
+                    "fontSize": 22,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginTop": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                  },
+                ]
+              }
+            >
+              <Text
+                fontWeight="bold"
+                style={
+                  [
+                    {
+                      "color": "#0D0D0D",
+                      "fontFamily": "Poppins_700Bold",
+                      "fontSize": 31,
+                    },
+                    {
+                      "color": "#FE8C00",
+                      "fontSize": 27,
+                    },
+                  ]
+                }
+              >
+                $
+                100.00
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#FE8C00",
+                      "borderRadius": 24,
+                      "height": 47,
+                      "justifyContent": "center",
+                      "width": 47,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "color": undefined,
+                        "fontSize": 12,
+                      },
+                      [
+                        {
+                          "color": "#FFFFFF",
+                          "fontSize": 27,
+                        },
+                      ],
+                      {
+                        "fontFamily": "Feather",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "borderColor": "rgba(0, 0, 0, 0.1)",
+              "borderRadius": 16,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": 304,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              {
+                "testUri": "../../../src/assets/defaultChef.png",
+              }
+            }
+            style={
+              [
+                {
+                  "borderTopLeftRadius": 12,
+                  "borderTopRightRadius": 12,
+                  "height": 196,
+                  "width": "100%",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {},
+              ]
+            }
+          >
+            <Text
+              fontWeight="semiBold"
+              style={
+                [
+                  {
+                    "color": "#0D0D0D",
+                    "fontFamily": "Poppins_600SemiBold",
+                    "fontSize": 31,
+                  },
+                  {
+                    "fontSize": 29,
+                    "lineHeight": 35,
+                    "marginTop": 16,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                  },
+                ]
+              }
+            >
+              Simple Burguer
+            </Text>
+            <Text
+              numberOfLines={2}
+              style={
+                [
+                  {
+                    "color": "#0D0D0D",
+                    "fontFamily": "Poppins_400Regular",
+                    "fontSize": 31,
+                  },
+                  {
+                    "fontSize": 22,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginTop": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                  },
+                ]
+              }
+            >
+              <Text
+                fontWeight="bold"
+                style={
+                  [
+                    {
+                      "color": "#0D0D0D",
+                      "fontFamily": "Poppins_700Bold",
+                      "fontSize": 31,
+                    },
+                    {
+                      "color": "#FE8C00",
+                      "fontSize": 27,
+                    },
+                  ]
+                }
+              >
+                $
+                120.00
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#FE8C00",
+                      "borderRadius": 24,
+                      "height": 47,
+                      "justifyContent": "center",
+                      "width": 47,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "color": undefined,
+                        "fontSize": 12,
+                      },
+                      [
+                        {
+                          "color": "#FFFFFF",
+                          "fontSize": 27,
+                        },
+                      ],
+                      {
+                        "fontFamily": "Feather",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`organism/FoodColumnList Tests should match snapshot without foods 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    {
+      "margin": 27,
+    }
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    [
+      {},
+    ]
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View />
+</RCTScrollView>
+`;

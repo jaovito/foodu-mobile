@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderImage tests should match snapshot without onchange  1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderColor": "#FFFFFF",
+        "borderRadius": 31,
+        "borderStyle": "solid",
+        "borderWidth": 3,
+        "height": "85%",
+        "justifyContent": "center",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View>
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        [
+          {
+            "color": "red",
+            "fontSize": 12,
+          },
+          [
+            {
+              "fontSize": 90,
+              "position": "absolute",
+              "zIndex": 5,
+            },
+          ],
+          {
+            "fontFamily": "FontAwesome5Free-Solid",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          {
+            "fontWeight": "900",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    allowFontScaling={false}
+    selectable={false}
+    style={
+      [
+        {
+          "color": "red",
+          "fontSize": 12,
+        },
+        [
+          {
+            "fontSize": 90,
+            "position": "absolute",
+            "zIndex": 5,
+          },
+        ],
+        {
+          "fontFamily": "FontAwesome5Free-Solid",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {
+          "fontWeight": "900",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`HeaderImage tests should match with snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderColor": "#FFFFFF",
+        "borderRadius": 31,
+        "borderStyle": "solid",
+        "borderWidth": 3,
+        "height": "85%",
+        "justifyContent": "center",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View>
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        [
+          {
+            "color": "red",
+            "fontSize": 12,
+          },
+          [
+            {
+              "fontSize": 90,
+              "position": "absolute",
+              "zIndex": 5,
+            },
+          ],
+          {
+            "fontFamily": "FontAwesome5Free-Solid",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          {
+            "fontWeight": "900",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    allowFontScaling={false}
+    selectable={false}
+    style={
+      [
+        {
+          "color": "red",
+          "fontSize": 12,
+        },
+        [
+          {
+            "fontSize": 90,
+            "position": "absolute",
+            "zIndex": 5,
+          },
+        ],
+        {
+          "fontFamily": "FontAwesome5Free-Solid",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {
+          "fontWeight": "900",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;

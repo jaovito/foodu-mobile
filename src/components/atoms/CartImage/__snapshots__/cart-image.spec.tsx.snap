@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CartImage /> tests should be able to match with snapshot 1`] = `
+<Image
+  source={
+    {
+      "testUri": "../../../src/assets/pizza.png",
+    }
+  }
+  style={
+    [
+      {},
+    ]
+  }
+/>
+`;

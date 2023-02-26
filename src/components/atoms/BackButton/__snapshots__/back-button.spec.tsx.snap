@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackButton Tests should be able to match with snapshot with onPress 1`] = `
+<RNGestureHandlerButton
+  activeOpacity={0.3}
+  borderless={true}
+  collapsable={false}
+  delayLongPress={600}
+  handlerTag={4}
+  handlerType="NativeViewGestureHandler"
+  onActiveStateChange={[Function]}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  onPress={[MockFunction]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "#FFFFFF",
+      "borderRadius": 39,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "height": 78,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 78,
+    }
+  }
+  testID="BackButtonID"
+>
+  <Text
+    allowFontScaling={false}
+    selectable={false}
+    style={
+      [
+        {
+          "color": undefined,
+          "fontSize": 12,
+        },
+        [
+          {
+            "color": "#FFFFFF",
+            "fontSize": 27,
+          },
+        ],
+        {
+          "fontFamily": "Entypo",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    
+  </Text>
+</RNGestureHandlerButton>
+`;
+
+exports[`BackButton Tests should be able to match with snapshot without onPress 1`] = `
+<RNGestureHandlerButton
+  activeOpacity={0.3}
+  borderless={true}
+  collapsable={false}
+  delayLongPress={600}
+  handlerTag={3}
+  handlerType="NativeViewGestureHandler"
+  onActiveStateChange={[Function]}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "#FFFFFF",
+      "borderRadius": 39,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "height": 78,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 78,
+    }
+  }
+  testID="BackButtonID"
+>
+  <Text
+    allowFontScaling={false}
+    selectable={false}
+    style={
+      [
+        {
+          "color": undefined,
+          "fontSize": 12,
+        },
+        [
+          {
+            "color": "#FFFFFF",
+            "fontSize": 27,
+          },
+        ],
+        {
+          "fontFamily": "Entypo",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        {},
+      ]
+    }
+  >
+    
+  </Text>
+</RNGestureHandlerButton>
+`;

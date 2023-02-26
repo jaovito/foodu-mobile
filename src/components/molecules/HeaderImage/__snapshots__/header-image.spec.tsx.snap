@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderImage tests should match snapshot with an address 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 490,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": "100%",
+          "justifyContent": "flex-end",
+          "width": "100%",
+        },
+        {
+          "alignItems": "flex-start",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/assets/header.png",
+        }
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "height": "100%",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_400Regular",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 27,
+            "marginLeft": 39,
+            "marginTop": 147,
+          },
+        ]
+      }
+    >
+      general.yourLocation
+    </Text>
+    <Text
+      fontWeight="semiBold"
+      numberOfLines={1}
+      onPress={[Function]}
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_600SemiBold",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 29,
+            "marginBottom": 31,
+            "marginLeft": 39,
+            "marginRight": 0,
+            "marginTop": 16,
+          },
+        ]
+      }
+    >
+      New York
+    </Text>
+    <Text
+      fontWeight="semiBold"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_600SemiBold",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 63,
+            "marginLeft": 39,
+          },
+        ]
+      }
+    >
+      general.orderFavoriteFood
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`HeaderImage tests should match with snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 490,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "height": "100%",
+          "justifyContent": "flex-end",
+          "width": "100%",
+        },
+        {
+          "alignItems": "flex-start",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        {
+          "testUri": "../../../src/assets/header.png",
+        }
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "height": "100%",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_400Regular",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 27,
+            "marginLeft": 39,
+            "marginTop": 147,
+          },
+        ]
+      }
+    >
+      general.yourLocation
+    </Text>
+    <Text
+      fontWeight="semiBold"
+      numberOfLines={1}
+      onPress={[Function]}
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_600SemiBold",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 29,
+            "marginBottom": 31,
+            "marginLeft": 39,
+            "marginRight": 0,
+            "marginTop": 16,
+          },
+        ]
+      }
+    >
+      general.city
+    </Text>
+    <Text
+      fontWeight="semiBold"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_600SemiBold",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 63,
+            "marginLeft": 39,
+          },
+        ]
+      }
+    >
+      general.orderFavoriteFood
+    </Text>
+  </View>
+</View>
+`;

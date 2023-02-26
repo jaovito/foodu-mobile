@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading /> tests should match with snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.5)",
+        "height": "100%",
+        "justifyContent": "center",
+        "position": "absolute",
+        "width": "100%",
+        "zIndex": 100,
+      },
+    ]
+  }
+>
+  <ActivityIndicator
+    size="large"
+    style={
+      [
+        {},
+      ]
+    }
+  />
+</View>
+`;

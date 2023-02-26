@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NutritionCard /> tests should be able to match with snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#FE8C00",
+          "borderRadius": 20,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "minWidth": 177,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "marginTop": 63,
+        },
+      ]
+    }
+  >
+    <Text
+      fontWeight="medium"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_500Medium",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FE8C00",
+            "fontSize": 27,
+            "marginBottom": 16,
+          },
+        ]
+      }
+    >
+      food.size
+    </Text>
+    <Text
+      fontWeight="medium"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_500Medium",
+            "fontSize": 31,
+          },
+          {
+            "color": "#0D0D0D",
+            "fontSize": 35,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#FE8C00",
+          "borderRadius": 20,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "minWidth": 177,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "marginTop": 63,
+        },
+      ]
+    }
+  >
+    <Text
+      fontWeight="medium"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_500Medium",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FE8C00",
+            "fontSize": 27,
+            "marginBottom": 16,
+          },
+        ]
+      }
+    >
+      food.energy
+    </Text>
+    <Text
+      fontWeight="medium"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_500Medium",
+            "fontSize": 31,
+          },
+          {
+            "color": "#0D0D0D",
+            "fontSize": 35,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#FE8C00",
+          "borderRadius": 20,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "minWidth": 177,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "marginTop": 63,
+        },
+      ]
+    }
+  >
+    <Text
+      fontWeight="medium"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_500Medium",
+            "fontSize": 31,
+          },
+          {
+            "color": "#FE8C00",
+            "fontSize": 27,
+            "marginBottom": 16,
+          },
+        ]
+      }
+    >
+      food.delivery
+    </Text>
+    <Text
+      fontWeight="medium"
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_500Medium",
+            "fontSize": 31,
+          },
+          {
+            "color": "#0D0D0D",
+            "fontSize": 35,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

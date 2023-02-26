@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FoodHeader /> tests should be able to match with snapshot 1`] = `
+<View
+  style={
+    [
+      {},
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingBottom": 0,
+          "paddingLeft": 39,
+          "paddingRight": 39,
+          "paddingTop": 157,
+        },
+      ]
+    }
+  >
+    <RNGestureHandlerButton
+      activeOpacity={0.3}
+      borderless={true}
+      collapsable={false}
+      delayLongPress={600}
+      handlerTag={7}
+      handlerType="NativeViewGestureHandler"
+      onActiveStateChange={[Function]}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      onPress={
+        [MockFunction] {
+          "calls": [
+            [],
+          ],
+          "results": [
+            {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 39,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "height": 78,
+          "justifyContent": "center",
+          "opacity": 1,
+          "width": 78,
+        }
+      }
+      testID="BackButtonID"
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            [
+              {
+                "color": "#FFFFFF",
+                "fontSize": 27,
+              },
+            ],
+            {
+              "fontFamily": "Entypo",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+    </RNGestureHandlerButton>
+    <RNGestureHandlerButton
+      activeOpacity={0.3}
+      borderless={true}
+      collapsable={false}
+      delayLongPress={600}
+      handlerTag={8}
+      handlerType="NativeViewGestureHandler"
+      onActiveStateChange={[Function]}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
+      onPress={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 39,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "height": 78,
+          "justifyContent": "center",
+          "opacity": 1,
+          "width": 78,
+        }
+      }
+      testID="FavoriteButtonID"
+    >
+      <SvgMock
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+              "fontSize": 27,
+            },
+          ]
+        }
+      />
+    </RNGestureHandlerButton>
+  </View>
+  <Image
+    source={
+      {
+        "testUri": "../../../src/assets/defaultChef.png",
+      }
+    }
+    style={
+      [
+        {
+          "height": 769,
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": -1,
+        },
+      ]
+    }
+  />
+</View>
+`;

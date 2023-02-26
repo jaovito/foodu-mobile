@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantCard tests should match with snapshot 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderBottomWidth": 1,
+      "borderColor": "rgba(0, 0, 0, 0.1)",
+      "borderRadius": 16,
+      "flexDirection": "row",
+      "opacity": 1,
+      "paddingBottom": 31,
+      "paddingLeft": 31,
+      "paddingRight": 31,
+      "paddingTop": 31,
+    }
+  }
+>
+  <Image
+    source={
+      {
+        "testUri": "../../../src/assets/defaultChef.png",
+      }
+    }
+    style={
+      [
+        {
+          "borderRadius": 12,
+          "height": 157,
+          "marginRight": 55,
+          "width": 157,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {},
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_400Regular",
+            "fontSize": 31,
+          },
+          {},
+        ]
+      }
+    >
+      Palpatin
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_400Regular",
+            "fontSize": 31,
+          },
+          {},
+        ]
+      }
+    >
+      New york
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#FE8C00",
+          "borderRadius": 16,
+          "justifyContent": "center",
+          "marginTop": 16,
+          "opacity": 1,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0D0D0D",
+              "fontFamily": "Poppins_400Regular",
+              "fontSize": 31,
+            },
+            {
+              "color": "#FFFFFF",
+            },
+            {
+              "fontSize": 16,
+              "textAlign": "center",
+              "width": 100,
+            },
+          ]
+        }
+      >
+        general.seeMore
+      </Text>
+    </View>
+  </View>
+</View>
+`;

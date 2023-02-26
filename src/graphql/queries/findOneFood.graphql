@@ -1,0 +1,34 @@
+query FindOneFood($id: String!) {
+  food(id:$id) {
+    id
+    name
+    about
+    size
+    energy
+    price
+    file {
+      file_url
+    }
+    restaurant {
+      id
+      name
+      about
+      address
+      city
+      uf
+      created_at
+      neighbourhood
+      
+      file {
+        file_url
+      }
+    }
+    categories: categories_on_foods {
+      category {
+        name
+      }
+    }
+    created_at
+    updated_at
+  }
+}
