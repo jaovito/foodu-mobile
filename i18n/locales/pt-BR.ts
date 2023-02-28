@@ -11,6 +11,7 @@ export default {
   },
   signIn: {
     title: 'Bem-vindo',
+    signUp: 'Cadastrar-se',
 
     email: {
       label: 'E-mail',
@@ -32,6 +33,48 @@ export default {
     },
 
     buttonText: 'Entrar',
+  },
+  signUp: {
+    title: 'Cadastrar-se',
+    alreadyHaveAccount: 'Já tenho uma conta',
+
+    name: {
+      label: 'Nome',
+      placeholder: 'Digite seu nome',
+
+      errors: {
+        required: 'Digite um nome',
+      },
+    },
+    cel: {
+      label: 'Celular',
+      placeholder: 'Digite seu celular',
+
+      errors: {
+        required: 'Digite um celular',
+        length: 'Seu número deve ter pelo menos 10 digitos',
+      },
+    },
+    email: {
+      label: 'E-mail',
+      placeholder: 'Digite seu e-mail',
+
+      errors: {
+        required: 'Digite um e-mail',
+        valid: 'Digite um e-mail válido',
+      },
+    },
+    password: {
+      label: 'Senha',
+      placeholder: '******',
+
+      errors: {
+        required: 'Por favor digite uma senha',
+        length: 'Digite uma senha com pelo menos 6 digitos',
+      },
+    },
+
+    buttonText: 'Salvar',
   },
   location: {
     title: 'De onde você é?',

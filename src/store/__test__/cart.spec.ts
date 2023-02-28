@@ -19,7 +19,7 @@ describe('Cart Store Test', () => {
     const foods = mock.cartStore.foods;
 
     for (const foodItem of foods) {
-      foodModel.addToCart(foodItem);
+      foodModel.addToCart(foodItem, 1);
     }
 
     expect(foodModel.allFoods).toHaveLength(2);
@@ -37,7 +37,7 @@ describe('Cart Store Test', () => {
     expect(foodModel.allFoods).toHaveLength(2);
   });
 
-  it('should be able to remove some foods of the cart', () => {
+  it('should be able to remove some foods of the cart', async () => {
     const foodModel = CartModel.create({
       foods: {},
     });
@@ -45,7 +45,7 @@ describe('Cart Store Test', () => {
     const foods = mock.cartStore.foods;
     foodModel.setFoods(foods);
 
-    foodModel.removeFood(mock.cartStore.foods[0].id);
+    await foodModel.removeFood(mock.cartStore.foods[0].id);
 
     expect(foodModel.allFoods).toHaveLength(1);
     expect(foodModel.allFoods[0]).toStrictEqual(mock.cartStore.foods[1]);

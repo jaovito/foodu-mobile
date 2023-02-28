@@ -10,6 +10,7 @@ export const cartStore = {
       price: 100,
       energy: '100 KCal',
       about: '',
+      counter: 2,
       size: FoodSize.Big,
       file: {
         file_url: 'http://',
@@ -23,6 +24,7 @@ export const cartStore = {
       price: 120,
       energy: '120 KCal',
       about: '',
+      counter: 2,
       size: FoodSize.Big,
       file: {
         file_url: 'http://',

@@ -10,6 +10,7 @@ export default {
   },
   signIn: {
     title: 'Welcome',
+    signUp: 'Sign Up',
 
     email: {
       label: 'Email',
@@ -31,6 +32,48 @@ export default {
     },
 
     buttonText: 'SignIn',
+  },
+  signUp: {
+    title: 'Sign Up',
+    alreadyHaveAccount: 'I already have an account',
+
+    name: {
+      label: 'Name',
+      placeholder: 'Enter your name',
+
+      errors: {
+        required: 'The name is required',
+      },
+    },
+    cel: {
+      label: 'Phone number',
+      placeholder: 'Enter your phone number',
+
+      errors: {
+        required: 'Phone number is required',
+        length: 'Please enter a phone number must be at least 10 numbers',
+      },
+    },
+    email: {
+      label: 'Email',
+      placeholder: 'Enter your email',
+
+      errors: {
+        required: 'Please enter an email address',
+        valid: 'Please enter a valid email address',
+      },
+    },
+    password: {
+      label: 'Password',
+      placeholder: '******',
+
+      errors: {
+        required: 'Please enter a valid password',
+        length: 'Please enter a password must be at least 6 characters',
+      },
+    },
+
+    buttonText: 'Register',
   },
   location: {
     title: 'Where are you from?',

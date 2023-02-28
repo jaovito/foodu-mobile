@@ -8,6 +8,7 @@ export type RootStackParamList = {
   Restaurants: undefined;
   Onboarding: undefined;
   SignIn: undefined;
+  SignUp: undefined;
   Tab: TabRoute<{id: string}>;
   Food: {id: string};
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {InputProps} from './input.props';
 import {
   Container,
@@ -6,6 +7,7 @@ import {
   Fieldset,
   Label,
   ErrorText,
+  TextInputMask,
 } from './input.styles';
 
 export const Input = ({
@@ -14,6 +16,7 @@ export const Input = ({
   label,
   name,
   error,
+  mask,
   ...rest
 }: InputProps) => {
   return (
@@ -26,13 +29,25 @@ export const Input = ({
       render={({field: {onChange, onBlur, value}}) => (
         <Fieldset>
           <Label>{label}</Label>
-          <RNInput
-            onBlur={onBlur}
-            onChangeText={onChange}
-            value={value}
-            placeholder={placeholder}
-            {...rest}
-          />
+          {!mask ? (
+            <RNInput
+              onBlur={onBlur}
+              onChangeText={onChange}
+              value={value}
+              placeholder={placeholder}
+              {...rest}
+            />
+          ) : (
+            <TextInputMask
+              onBlur={onBlur}
+              onChangeText={onChange}
+              value={value}
+              placeholder={placeholder}
+              type="cel-phone"
+              options={mask}
+              {...rest}
+            />
+          )}
           {error && <ErrorText>{error}</ErrorText>}
         </Fieldset>
       )}

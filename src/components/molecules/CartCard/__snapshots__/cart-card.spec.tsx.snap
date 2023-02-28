@@ -11,7 +11,7 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
         "borderStyle": "solid",
         "borderWidth": 1,
         "flexDirection": "row",
-        "marginTop": 196,
+        "marginBottom": 31,
         "paddingBottom": 24,
         "paddingLeft": 16,
         "paddingRight": 16,

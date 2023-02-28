@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 import {useForm} from 'react-hook-form';
 
 import {IFormValues, LandingProps} from './sign-in.props';
-import {Container} from './sign-in.styles';
+import {Container, TextButton} from './sign-in.styles';
 import {Form} from '@components/organisms/Form';
 import {InputProps} from '@components/molecules/Input/input.props';
 import {translate} from '@translations/index';
@@ -37,6 +37,10 @@ export const SignIn = ({}: LandingProps) => {
     } finally {
       setIsLoading(false);
     }
+  }
+
+  function handleGoSignUp() {
+    navigate('SignUp');
   }
 
   const inputs: InputProps[] = [
@@ -71,6 +75,10 @@ export const SignIn = ({}: LandingProps) => {
         buttonText={translate(LanguagePaths.SIGNIN_BUTTON_TEXT)}
         onSubmit={handleSubmit(handleGoSignIn)}
       />
+
+      <TextButton onPress={handleGoSignUp}>
+        {translate(LanguagePaths.SIGNIN_SIGN_UP)}
+      </TextButton>
 
       {isLoading && <Loading />}
     </Container>

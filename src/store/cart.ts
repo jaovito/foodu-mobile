@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {flow, Instance, SnapshotIn, SnapshotOut, types} from 'mobx-state-tree';
-import {Food, FoodSize} from '../generated/graphql';
+import {FoodSize} from '../generated/graphql';
 import {nullOrUndefined} from './helpers/nullOrUndefined';
 
 const FoodModel = types.model({
@@ -51,7 +51,7 @@ export const CartModel = types
       self.foods = foodObjects;
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(foodObjects));
     }),
-    addToCart: flow(function* (food: Food, counter: number) {
+    addToCart: flow(function* (food: ICartFoodSnapshotIn, counter: number) {
       self.foods.set(food.id, {...food, counter});
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(self.foods));
     }),
@@ -62,6 +62,24 @@ export const CartModel = types
     removeAllFoods: flow(function* () {
       self.foods.clear();
       yield AsyncStorage.removeItem('@foodu:cart');
+    }),
+    refreshFoods: flow(function* () {
+      const foodsStr = yield AsyncStorage.getItem('@foodu:cart');
+      const foods = JSON.parse(foodsStr);
+
+      self.foods = JSON.parse(foods);
+
+      return Array.from(foods);
+    }),
+    updateCounterFood: flow(function* (id: string, counter: number) {
+      const food = self.foods.get(id);
+
+      if (!food) {
+        return;
+      }
+
+      self.foods.set(id, {...food, counter});
+      yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(self.foods));
     }),
   }));
 

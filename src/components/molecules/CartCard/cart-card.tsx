@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 
 import {CartCardProps} from './cart-card.props';
 import {
@@ -17,6 +17,7 @@ import {
 } from './cart-card.styles';
 
 import defaultChefImg from '../../../assets/defaultChef.png';
+import {store} from '@store/index';
 
 export const CartCard = ({
   image,
@@ -25,11 +26,20 @@ export const CartCard = ({
   name,
   price,
   onDelete,
+  id,
 }: CartCardProps) => {
   const [foodCounter, setFoodCounter] = useState(counter);
+  const {updateCounterFood} = store.cart;
+
+  useEffect(() => {
+    return () => {
+      setFoodCounter(1);
+    };
+  }, []);
 
   const handleIncrementCounter = useCallback(() => {
     if (foodCounter <= 0) {
+      updateCounterFood(id, 1);
       return setFoodCounter(1);
     }
 
@@ -37,15 +47,22 @@ export const CartCard = ({
       return;
     }
 
-    return setFoodCounter(state => state + 1);
+    return setFoodCounter(state => {
+      updateCounterFood(id, state + 1);
+      return state + 1;
+    });
   }, [foodCounter, counter]);
 
   const handleDecrementCounter = useCallback(() => {
     if (foodCounter - 1 <= 0) {
+      updateCounterFood(id, 1);
       return setFoodCounter(1);
     }
 
-    return setFoodCounter(state => state - 1);
+    return setFoodCounter(state => {
+      updateCounterFood(id, state - 1);
+      return state - 1;
+    });
   }, [foodCounter, counter]);
 
   return (
