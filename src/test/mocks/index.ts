@@ -11,6 +11,7 @@ import {loginValidator} from './validators/login-validator.mock';
 import {cartStore} from './store/cart.mock';
 import {cartCard} from './components/molecules/cart-card.mock';
 import {cartList} from './components/organisms/cart-list.mock';
+import {cartTemplate} from './components/templates/cart-template.mock';
 
 export const mock = {
   buyFoodCard,
@@ -26,4 +27,5 @@ export const mock = {
   cartStore,
   cartCard,
   cartList,
+  cartTemplate,
 };

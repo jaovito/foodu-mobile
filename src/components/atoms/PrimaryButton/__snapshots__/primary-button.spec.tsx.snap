@@ -1,34 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PrimaryButton Tests should be able to match with snapshot with onPress 1`] = `
-<View
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
-  accessibilityValue={
-    {
-      "max": undefined,
-      "min": undefined,
-      "now": undefined,
-      "text": undefined,
-    }
-  }
-  accessible={true}
+<RNGestureHandlerButton
+  activeOpacity={0.8}
+  borderless={true}
   collapsable={false}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+  delayLongPress={600}
+  handlerTag={4}
+  handlerType="NativeViewGestureHandler"
+  onActiveStateChange={[Function]}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  onPress={[MockFunction]}
   style={
     {
       "alignItems": "center",
@@ -68,38 +53,22 @@ exports[`PrimaryButton Tests should be able to match with snapshot with onPress 
   >
     
   </Text>
-</View>
+</RNGestureHandlerButton>
 `;
 
 exports[`PrimaryButton Tests should be able to match with snapshot without onPress 1`] = `
-<View
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
-  accessibilityValue={
-    {
-      "max": undefined,
-      "min": undefined,
-      "now": undefined,
-      "text": undefined,
-    }
-  }
-  accessible={true}
+<RNGestureHandlerButton
+  activeOpacity={0.8}
+  borderless={true}
   collapsable={false}
-  focusable={false}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
+  delayLongPress={600}
+  handlerTag={3}
+  handlerType="NativeViewGestureHandler"
+  onActiveStateChange={[Function]}
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
   style={
     {
       "alignItems": "center",
@@ -139,5 +108,5 @@ exports[`PrimaryButton Tests should be able to match with snapshot without onPre
   >
     
   </Text>
-</View>
+</RNGestureHandlerButton>
 `;

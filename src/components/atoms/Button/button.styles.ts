@@ -1,8 +1,9 @@
+import {RectButton} from 'react-native-gesture-handler';
 import {RFValue} from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 import {Text as CText} from '../Text';
 
-export const Container = styled.TouchableOpacity`
+export const Container = styled(RectButton)`
   align-items: center;
   justify-content: center;
 

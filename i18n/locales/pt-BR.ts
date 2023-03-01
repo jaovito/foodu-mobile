@@ -102,6 +102,7 @@ export default {
     city: 'Cidade de {city}',
     seeMore: 'Ver mais',
     empty: 'Nada para mostrar',
+    save: 'Salvar',
   },
   errors: {
     generic: 'Houve um erro, tente novamente mais tarde',

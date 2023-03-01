@@ -95,34 +95,17 @@ exports[`RestaurantCard tests should match with snapshot 1`] = `
     >
       New york
     </Text>
-    <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
+    <RNGestureHandlerButton
+      activeOpacity={0.105}
       collapsable={false}
-      focusable={false}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
+      delayLongPress={600}
+      handlerTag={5}
+      handlerType="NativeViewGestureHandler"
+      onActiveStateChange={[Function]}
+      onGestureEvent={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onHandlerStateChange={[Function]}
       style={
         {
           "alignItems": "center",
@@ -130,7 +113,6 @@ exports[`RestaurantCard tests should match with snapshot 1`] = `
           "borderRadius": 16,
           "justifyContent": "center",
           "marginTop": 16,
-          "opacity": 1,
           "paddingBottom": 8,
           "paddingLeft": 8,
           "paddingRight": 8,
@@ -138,7 +120,27 @@ exports[`RestaurantCard tests should match with snapshot 1`] = `
           "width": "100%",
         }
       }
+      underlayColor="black"
     >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "black",
+            "borderBottomLeftRadius": undefined,
+            "borderBottomRightRadius": undefined,
+            "borderRadius": 16,
+            "borderTopLeftRadius": undefined,
+            "borderTopRightRadius": undefined,
+            "bottom": 0,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
       <Text
         style={
           [
@@ -160,7 +162,7 @@ exports[`RestaurantCard tests should match with snapshot 1`] = `
       >
         general.seeMore
       </Text>
-    </View>
+    </RNGestureHandlerButton>
   </View>
 </View>
 `;

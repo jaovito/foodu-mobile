@@ -1,9 +1,10 @@
+import {BorderlessButton} from 'react-native-gesture-handler';
 import {RFValue} from 'react-native-responsive-fontsize';
 import Feather from 'react-native-vector-icons/Feather';
 import styled from 'styled-components/native';
 import {PrimaryButtonStyleProps} from './primary-button.props';
 
-export const Container = styled.TouchableOpacity<PrimaryButtonStyleProps>`
+export const Container = styled(BorderlessButton)<PrimaryButtonStyleProps>`
   width: ${RFValue(32)}px;
   height: ${RFValue(32)}px;
   border-radius: ${RFValue(16)}px;

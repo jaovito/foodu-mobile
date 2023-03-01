@@ -101,6 +101,7 @@ export default {
     city: 'Follow me',
     seeMore: 'See more',
     empty: 'Nothing to see',
+    save: 'Salvar',
   },
   errors: {
     generic: 'An error occurred, please try again later',

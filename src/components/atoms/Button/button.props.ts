@@ -1,8 +1,8 @@
 import {ReactNode} from 'react';
-import {TouchableOpacityProps} from 'react-native';
+import {RectButtonProps} from 'react-native-gesture-handler';
 import {TextProps} from '../Text/text.props';
 
-export interface ButtonProps extends TouchableOpacityProps {
+export interface ButtonProps extends RectButtonProps {
   children: ReactNode;
   textProps?: Partial<TextProps>;
 }
