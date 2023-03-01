@@ -96,6 +96,9 @@ export default {
 
     addCart: 'Adicionar no carrinho',
   },
+  cart: {
+    submit: 'Comprar',
+  },
   general: {
     yourLocation: 'Sua localização',
     orderFavoriteFood: 'Peça Sua \nComida Favorita',

@@ -75,6 +75,9 @@ export default {
 
     buttonText: 'Register',
   },
+  cart: {
+    submit: 'Buy',
+  },
   location: {
     title: 'Where are you from?',
     address: 'Address',

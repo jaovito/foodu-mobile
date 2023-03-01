@@ -51,6 +51,8 @@ export enum LanguagePaths {
   FOOD_ABOUT = 'food.about',
   FOOD_ADD_CART = 'food.addCart',
 
+  CART_SUBMIT = 'cart.submit',
+
   GENERAL_YOUR_LOCATION = 'general.yourLocation',
   GENERAL_ORDER_FAVORITE_FOOD = 'general.orderFavoriteFood',
   GENERAL_CITY = 'general.city',
