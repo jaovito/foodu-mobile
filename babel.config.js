@@ -17,6 +17,7 @@ module.exports = {
           '@theme': './src/theme/index.ts',
           '@env': '.env.json',
           '@validators': './src/validators',
+          '@utils': './src/utils',
         },
       },
     ],

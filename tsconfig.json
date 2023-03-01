@@ -12,6 +12,7 @@
       "@translations/*": ["./i18n/*"],
       "@store/*": ["./src/store/*"],
       "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"],
       "@test-utils": ["./src/test/utils/test-utils.tsx"],
       "@theme": ["./src/theme/index.ts"],
       "@env": [".env.json"],
