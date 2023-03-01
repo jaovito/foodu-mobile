@@ -32,7 +32,7 @@ const FoodInfoComponent: React.ForwardRefRenderFunction<
   ref,
 ) => {
   return (
-    <Container withHandle={false} ref={ref}>
+    <Container withHandle={true} ref={ref}>
       <Title fontWeight="semiBold">{name}</Title>
 
       <PriceContainer>
@@ -59,4 +59,4 @@ const FoodInfoComponent: React.ForwardRefRenderFunction<
   );
 };
 
-export const FoodInfo = forwardRef(FoodInfoComponent);
+export const FoodInfo = forwardRef<Modalize, FoodInfoProps>(FoodInfoComponent);

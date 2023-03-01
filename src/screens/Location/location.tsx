@@ -50,7 +50,6 @@ export const Location = observer(() => {
   }, []);
 
   useEffect(() => {
-    setLoading(true);
     (async () => {
       if (!latitude || !longitude) {
         let {status} = await ExpoLocation.requestForegroundPermissionsAsync();

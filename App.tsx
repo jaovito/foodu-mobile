@@ -9,6 +9,7 @@ import React, {useEffect} from 'react';
 import {ThemeProvider} from 'styled-components/native';
 import * as SplashScreen from 'expo-splash-screen';
 import {observer, Provider as StoreProvider} from 'mobx-react';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 import {Routes} from './src/routes';
 import theme from './src/theme';
@@ -53,7 +54,7 @@ const App = observer(() => {
   }
 
   return (
-    <>
+    <GestureHandlerRootView style={{flex: 1}}>
       <ThemeProvider theme={theme}>
         <Provider value={client}>
           <View style={{flex: 1, backgroundColor: theme.colors.background}}>
@@ -62,7 +63,7 @@ const App = observer(() => {
         </Provider>
       </ThemeProvider>
       <StatusBar style="auto" />
-    </>
+    </GestureHandlerRootView>
   );
 });
 

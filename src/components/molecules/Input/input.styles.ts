@@ -4,12 +4,14 @@ import {TextInput} from 'react-native';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {Text} from '@components/atoms/Text';
 import {TextInputMask as RNTextInputMask} from 'react-native-masked-text';
+import {InputStyleProps} from './input.props';
 
 export const Container = styled(Controller)``;
 
-export const Input = styled(TextInput)`
+export const Input = styled(TextInput)<InputStyleProps>`
   background-color: ${({theme}) => theme.colors.background};
-  border-color: ${({theme}) => theme.colors.light_text};
+  border-color: ${({theme, error}) =>
+    error ? theme.colors.status.danger : theme.colors.light_text};
   border-width: ${RFValue(2)}px;
   width: 100%;
 
@@ -38,9 +40,10 @@ export const ErrorText = styled(Text)`
   color: ${({theme}) => theme.colors.status.danger};
 `;
 
-export const TextInputMask = styled(RNTextInputMask)`
+export const TextInputMask = styled(RNTextInputMask)<InputStyleProps>`
   background-color: ${({theme}) => theme.colors.background};
-  border-color: ${({theme}) => theme.colors.light_text};
+  border-color: ${({theme, error}) =>
+    error ? theme.colors.status.danger : theme.colors.light_text};
   border-width: ${RFValue(2)}px;
   width: 100%;
 

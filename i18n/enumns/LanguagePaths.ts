@@ -55,4 +55,5 @@ export enum LanguagePaths {
   GENERAL_ORDER_FAVORITE_FOOD = 'general.orderFavoriteFood',
   GENERAL_CITY = 'general.city',
   GENERAL_SEE_MORE = 'general.seeMore',
+  GENERAL_NOTHING_TO_SEE = 'general.empty',
 }

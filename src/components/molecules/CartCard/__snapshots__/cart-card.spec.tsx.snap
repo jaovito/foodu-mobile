@@ -6,6 +6,7 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
     [
       {
         "alignItems": "flex-start",
+        "backgroundColor": "#FFFFFF",
         "borderColor": "rgba(0, 0, 0, 0.04)",
         "borderRadius": 16,
         "borderStyle": "solid",
@@ -16,6 +17,13 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
         "paddingLeft": 16,
         "paddingRight": 16,
         "paddingTop": 24,
+        "shadowColor": "rgba(0, 0, 0, 0.12)",
+        "shadowOffset": {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 8,
         "width": "100%",
       },
     ]
@@ -83,6 +91,7 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
             {
               "color": "#FFFFFF",
               "fontSize": 24,
+              "lineHeight": 29,
             },
           ]
         }
@@ -99,7 +108,8 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
-          "justifyContent": "flex-start",
+          "height": "90%",
+          "justifyContent": "space-between",
         },
       ]
     }
@@ -146,8 +156,9 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
           {
             "alignItems": "center",
             "flexDirection": "row",
-            "gap": 8,
+            "gap": 31,
             "marginTop": 16,
+            "width": "100%",
           },
         ]
       }
@@ -173,7 +184,7 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
             {
               "alignItems": "center",
               "flexDirection": "row",
-              "gap": 8,
+              "gap": 16,
               "justifyContent": "center",
             },
           ]
@@ -212,10 +223,10 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
               "alignItems": "center",
               "backgroundColor": "#FE8C00",
               "borderRadius": 31,
-              "height": 47,
+              "height": 63,
               "justifyContent": "center",
               "opacity": 1,
-              "width": 47,
+              "width": 63,
             }
           }
           testID="DecrementCounterButtonID"
@@ -280,10 +291,10 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
               "alignItems": "center",
               "backgroundColor": "#FE8C00",
               "borderRadius": 31,
-              "height": 47,
+              "height": 63,
               "justifyContent": "center",
               "opacity": 1,
-              "width": 47,
+              "width": 63,
             }
           }
           testID="IncrementCounterButtonID"
@@ -348,10 +359,10 @@ exports[`<CartCard /> should be able to match with snapshot 1`] = `
               "alignItems": "center",
               "backgroundColor": "red",
               "borderRadius": 31,
-              "height": 47,
+              "height": 63,
               "justifyContent": "center",
               "opacity": 1,
-              "width": 47,
+              "width": 63,
             }
           }
           testID="DeleteCartButtonID"

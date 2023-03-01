@@ -30,9 +30,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>1/4</span>
             </div>
         
             
@@ -150,17 +150,12 @@
 <a name='L85'></a><a href='#L85'>85</a>
 <a name='L86'></a><a href='#L86'>86</a>
 <a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a>
-<a name='L89'></a><a href='#L89'>89</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L88'></a><a href='#L88'>88</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -177,22 +172,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">6x</span>
@@ -225,10 +223,10 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -267,8 +265,7 @@ const FoodModel = types.model({
 &nbsp;
 const FoodModelMap = types.map(FoodModel);
 &nbsp;
-interface ICartFoodSnapshotIn extends Instance&lt;typeof FoodModel&gt; {}
-export interface ICartFoodMapSnapshotIn extends Instance&lt;typeof FoodModelMap&gt; {}
+export interface ICartFoodMap extends Instance&lt;typeof FoodModelMap&gt; {}
 export interface IFoodModel extends Instance&lt;typeof FoodModel&gt; {}
 &nbsp;
 export const CartModel = types
@@ -281,18 +278,18 @@ export const CartModel = types
     },
   }))
   .actions(self =&gt; ({
-    setFoods: flow(function* (foods: ICartFoodSnapshotIn[]) {
+    setFoods: flow(function* (foods: IFoodModel[]) {
       const foodObjects = foods.reduce((current, newValue) =&gt; {
         return {
           ...current,
           [newValue.id]: newValue,
         };
-      }, {} as ICartFoodMapSnapshotIn);
+      }, {} as ICartFoodMap);
 &nbsp;
       self.foods = foodObjects;
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(foodObjects));
     }),
-    addToCart: flow(function* (food: ICartFoodSnapshotIn, counter: number) {
+    addToCart: flow(function* (food: IFoodModel, counter: number) {
       self.foods.set(food.id, {...food, counter});
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(self.foods));
     }),
@@ -306,9 +303,9 @@ export const CartModel = types
     }),
     refreshFoods: flow(<span class="fstat-no" title="function not covered" >fu</span>nction* () {
       const foodsStr = <span class="cstat-no" title="statement not covered" >yield AsyncStorage.getItem('@foodu:cart');</span>
-      const foods = <span class="cstat-no" title="statement not covered" >JSON.parse(foodsStr);</span>
+      const foods = <span class="cstat-no" title="statement not covered" >foodsStr ? JSON.parse(foodsStr) : null;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      self.foods = JSON.parse(foods);</span>
+<span class="cstat-no" title="statement not covered" >      self.foods = foods;</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >      return Array.from(foods);</span>
     }),
@@ -334,7 +331,7 @@ export interface ICartSnapshotOut extends SnapshotOut&lt;typeof CartModel&gt; {}
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-28T17:48:39.079Z
+                at 2023-03-01T13:26:02.030Z
             </div>
         <script src="../prettify.js"></script>
         <script>

@@ -31,13 +31,15 @@ export const Home = () => {
 
   return (
     <>
-      <FoodsTemplate
-        address={address}
-        foods={data?.foods}
-        onPress={handleGoFood}
-      />
-
-      {fetching && <Loading />}
+      {fetching ? (
+        <Loading />
+      ) : (
+        <FoodsTemplate
+          address={address}
+          foods={data?.foods}
+          onPress={handleGoFood}
+        />
+      )}
     </>
   );
 };

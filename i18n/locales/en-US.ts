@@ -100,6 +100,7 @@ export default {
     orderFavoriteFood: 'Order Your \nFavorite Food',
     city: 'Follow me',
     seeMore: 'See more',
+    empty: 'Nothing to see',
   },
   errors: {
     generic: 'An error occurred, please try again later',

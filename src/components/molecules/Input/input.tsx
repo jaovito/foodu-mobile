@@ -35,6 +35,7 @@ export const Input = ({
               onChangeText={onChange}
               value={value}
               placeholder={placeholder}
+              error={!!error}
               {...rest}
             />
           ) : (
@@ -45,6 +46,7 @@ export const Input = ({
               placeholder={placeholder}
               type="cel-phone"
               options={mask}
+              error={!!error}
               {...rest}
             />
           )}

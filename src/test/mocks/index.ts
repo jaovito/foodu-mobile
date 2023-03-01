@@ -10,6 +10,7 @@ import {locationValidator} from './validators/location-validator.mock';
 import {loginValidator} from './validators/login-validator.mock';
 import {cartStore} from './store/cart.mock';
 import {cartCard} from './components/molecules/cart-card.mock';
+import {cartList} from './components/organisms/cart-list.mock';
 
 export const mock = {
   buyFoodCard,
@@ -24,4 +25,5 @@ export const mock = {
   foodColumnList,
   cartStore,
   cartCard,
+  cartList,
 };

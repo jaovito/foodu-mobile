@@ -24,7 +24,9 @@ export const Image = styled(RNImage)`
   border-top-left-radius: ${RFValue(6)}px;
 `;
 
-export const InfoContainer = styled.View``;
+export const InfoContainer = styled.View`
+  width: 100%;
+`;
 
 export const Title = styled(Text)`
   font-size: ${RFValue(15)}px;

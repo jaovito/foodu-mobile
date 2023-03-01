@@ -101,6 +101,7 @@ export default {
     orderFavoriteFood: 'Peça Sua \nComida Favorita',
     city: 'Cidade de {city}',
     seeMore: 'Ver mais',
+    empty: 'Nada para mostrar',
   },
   errors: {
     generic: 'Houve um erro, tente novamente mais tarde',

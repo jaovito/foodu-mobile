@@ -63,7 +63,9 @@ exports[`BuyFoodCard tests should match with snapshot 1`] = `
   <View
     style={
       [
-        {},
+        {
+          "width": "100%",
+        },
       ]
     }
   >

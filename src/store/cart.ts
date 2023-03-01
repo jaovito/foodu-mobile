@@ -26,8 +26,7 @@ const FoodModel = types.model({
 
 const FoodModelMap = types.map(FoodModel);
 
-interface ICartFoodSnapshotIn extends Instance<typeof FoodModel> {}
-export interface ICartFoodMapSnapshotIn extends Instance<typeof FoodModelMap> {}
+export interface ICartFoodMap extends Instance<typeof FoodModelMap> {}
 export interface IFoodModel extends Instance<typeof FoodModel> {}
 
 export const CartModel = types
@@ -40,18 +39,18 @@ export const CartModel = types
     },
   }))
   .actions(self => ({
-    setFoods: flow(function* (foods: ICartFoodSnapshotIn[]) {
+    setFoods: flow(function* (foods: IFoodModel[]) {
       const foodObjects = foods.reduce((current, newValue) => {
         return {
           ...current,
           [newValue.id]: newValue,
         };
-      }, {} as ICartFoodMapSnapshotIn);
+      }, {} as ICartFoodMap);
 
       self.foods = foodObjects;
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(foodObjects));
     }),
-    addToCart: flow(function* (food: ICartFoodSnapshotIn, counter: number) {
+    addToCart: flow(function* (food: IFoodModel, counter: number) {
       self.foods.set(food.id, {...food, counter});
       yield AsyncStorage.setItem('@foodu:cart', JSON.stringify(self.foods));
     }),
@@ -65,9 +64,9 @@ export const CartModel = types
     }),
     refreshFoods: flow(function* () {
       const foodsStr = yield AsyncStorage.getItem('@foodu:cart');
-      const foods = JSON.parse(foodsStr);
+      const foods = foodsStr ? JSON.parse(foodsStr) : null;
 
-      self.foods = JSON.parse(foods);
+      self.foods = foods;
 
       return Array.from(foods);
     }),

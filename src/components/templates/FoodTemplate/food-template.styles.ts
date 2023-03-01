@@ -11,7 +11,7 @@ export const Container = styled(Modalize).attrs({
     padding: 25,
   },
   alwaysOpen: 500,
-  panGesureEnabled: false,
+  panGesureEnabled: true,
 })``;
 
 export const Title = styled(Text)`

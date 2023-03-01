@@ -12,3 +12,7 @@ export interface InputProps extends TextInputProps {
   error?: string;
   mask?: TextInputMaskOptionProp;
 }
+
+export interface InputStyleProps {
+  error: boolean;
+}

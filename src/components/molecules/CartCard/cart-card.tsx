@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useState} from 'react';
 
 import {CartCardProps} from './cart-card.props';
 import {
@@ -30,12 +30,6 @@ export const CartCard = ({
 }: CartCardProps) => {
   const [foodCounter, setFoodCounter] = useState(counter);
   const {updateCounterFood} = store.cart;
-
-  useEffect(() => {
-    return () => {
-      setFoodCounter(1);
-    };
-  }, []);
 
   const handleIncrementCounter = useCallback(() => {
     if (foodCounter <= 0) {

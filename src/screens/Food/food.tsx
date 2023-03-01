@@ -4,13 +4,14 @@ import React, {useCallback, useRef, useState} from 'react';
 import {Modalize} from 'react-native-modalize';
 import {useNavigate} from '@hooks/useNavigate';
 
-import {Food as IFood, useFindOneFoodQuery} from '../../generated/graphql';
+import {useFindOneFoodQuery} from '../../generated/graphql';
 import {Container} from './food.styles';
 import {useRoute} from '@react-navigation/native';
 import {RouteParamsProps} from './food.props';
 import {Loading} from '@components/atoms/Loading';
 import {store} from '@store/index';
 import {Alert} from 'react-native';
+import {IFoodModel} from '@store/cart';
 
 export const Food = () => {
   const [counter, setCounter] = useState(1);
@@ -31,7 +32,7 @@ export const Food = () => {
     if (foodQuery.data?.food) {
       cart.addToCart(
         {
-          ...(foodQuery.data?.food as IFood),
+          ...(foodQuery.data?.food as IFoodModel),
           price: foodQuery.data.food.price * counter,
         },
         counter,

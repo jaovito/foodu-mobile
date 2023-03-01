@@ -16,6 +16,9 @@ const Tab = createBottomTabNavigator<RootDrawerParamList>();
 export default function TabRoutes() {
   return (
     <Tab.Navigator
+      sceneContainerStyle={{
+        backgroundColor: theme.colors.background,
+      }}
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: theme.colors.primary,
