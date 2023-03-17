@@ -3,6 +3,7 @@ import {store} from '@store/index';
 import {observer} from 'mobx-react';
 import {useFocusEffect} from '@react-navigation/native';
 import {CartTemplate} from '@components/templates/CartTemplate';
+import {StatusBar} from 'expo-status-bar';
 
 export const Cart = observer(() => {
   const {
@@ -22,5 +23,15 @@ export const Cart = observer(() => {
 
   useFocusEffect(refresh);
 
-  return <CartTemplate cart={allFoods} onDelete={handleDeleteFood} />;
+  return (
+    <>
+      <CartTemplate
+        onSave={() => {}}
+        cart={allFoods}
+        onDelete={handleDeleteFood}
+      />
+
+      <StatusBar style="dark" />
+    </>
+  );
 });

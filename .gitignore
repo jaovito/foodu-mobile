@@ -22,6 +22,7 @@ DerivedData
 *.xcuserstate
 ios/.xcode.env.local
 .env.json
+coverage
 
 # Android/IntelliJ
 #

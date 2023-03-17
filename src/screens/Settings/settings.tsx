@@ -4,6 +4,7 @@ import {useNavigate} from '@hooks/useNavigate';
 import {store} from '@store/index';
 import {LanguagePaths} from '@translations/enumns/LanguagePaths';
 import {translate} from '@translations/index';
+import {StatusBar} from 'expo-status-bar';
 import React from 'react';
 import {Container} from './settings.styles';
 
@@ -37,6 +38,8 @@ export const Settings = () => {
         }}
         onSignOut={signOut}
       />
+
+      <StatusBar style="dark" />
     </Container>
   );
 };

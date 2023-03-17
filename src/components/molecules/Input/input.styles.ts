@@ -43,7 +43,7 @@ export const ErrorText = styled(Text)`
 export const TextInputMask = styled(RNTextInputMask)<InputStyleProps>`
   background-color: ${({theme}) => theme.colors.background};
   border-color: ${({theme, error}) =>
-    error ? theme.colors.status.danger : theme.colors.light_text};
+    error ? theme.colors.status.danger : theme.colors.shape200};
   border-width: ${RFValue(2)}px;
   width: 100%;
 

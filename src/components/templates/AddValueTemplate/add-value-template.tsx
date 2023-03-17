@@ -1,13 +1,15 @@
-import {PrimaryButton} from '@components/atoms/PrimaryButton';
 import {Form} from '@components/organisms/Form';
+import {useNavigate} from '@hooks/useNavigate';
 import React from 'react';
 import {AddValueTemplateProps} from './add-value-template.props';
-import {Container} from './add-value-template.styles';
+import {Container, GoBack} from './add-value-template.styles';
 
 export const AddValueTemplate = ({inputs, onSubmit}: AddValueTemplateProps) => {
+  const {goBack} = useNavigate();
+
   return (
     <Container>
-      <PrimaryButton iconName="chevron-left" />
+      <GoBack onPress={goBack} iconName="chevron-left" />
 
       <Form
         inputs={inputs}

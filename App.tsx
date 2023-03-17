@@ -62,7 +62,7 @@ const App = observer(() => {
           </View>
         </Provider>
       </ThemeProvider>
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
     </GestureHandlerRootView>
   );
 });
