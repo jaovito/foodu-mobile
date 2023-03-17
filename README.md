@@ -25,4 +25,67 @@ Saving the location, you are already done, now you can see the restaurants resul
 - Clean Architecture (Some things only)
 
 ## Installation 💻
-First you need to clone the server repository and configure then, if you don't know how configure or you don't understand, you can use the following server url:
+First you need to clone the server repository and configure then, if you don't know how configure or you don't understand, you can use the following test server url: `foodu-server-production.up.railway.app` (you need to put it in the .env.json file, I will explain later).
+
+Now you can clone this repository with the following command:
+
+```sh
+$ git clone https://github.com/jaovito/f
+```
+
+After cloning the repository, you need to run the following command to install the packages inside the project directory:
+
+```sh
+$ npm install # or yarn install
+```
+
+After installing the packages, we need to configure the environment variables for the application, you will need to clone the file [.env.example](./.env.example.json) or rename it to `.env.json`. You can run this command if you are using the linux or macOS environment.
+```sh
+cp .env.example.json .env.json
+```
+
+After you've created the file, you need to open the file and insert your variables, if you don't want to run the server in your machine, you can just ignore this step.
+
+After that, you can follow the instructions below for installing configure the project into your environment (iOS or Android).
+
+### Android
+For android you will need to get the Google Maps API Key, because we use the Google Maps to render the map. After you have done that, you can insert the Google Maps API Key into [AndroidManifest.xml](./android/app/src/main/AndroidManifest.xml), in the line 21, you change the string from `INSERT YOUR API KEY HERE` to your Google maps API key.
+
+After you have done that, you can run your emulator and the following command to run the app:
+```sh
+$ npm run android # or yarn android
+```
+
+### iOS
+For iOS, you can only install the pods, running these commands:
+
+```sh
+$ cd ios && pod install
+```
+
+After you have done that, you can run your emulator and use the following command:
+
+```sh
+$ npm run ios # or yarn ios
+```
+
+Congratulations 👏🎉, the app was successfully installed.
+
+
+## App Flows
+Here you will see the app flows, some examples of how you can configure and use the app.
+
+### Login
+The first screen of the app is a simple onboarding, here you will see some information about the application, pressing the arrow button you go to login. After you can register your account, and then, login.
+
+// TODO: Put video or gif here
+
+### Location
+Once time you have registered and logged in, you can configure your location to find restaurants near your location. Here the server uses the Haversine formula to do that. After you type your address and select the correct address, you need to confirm the location in the map.
+
+// TODO: Put video or gif here
+
+### Restaurants and Foods
+After you have configured your location, you will see the restaurants near your location, now you can select the restaurant and see their foods, add some food to the cart and buy it. You can add the food to favorites too.
+
+// TODO: Put video or gif here

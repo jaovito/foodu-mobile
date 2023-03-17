@@ -53,10 +53,18 @@ export enum LanguagePaths {
 
   CART_SUBMIT = 'cart.submit',
 
+  SETTINGS_LOCATION = 'settings.location',
+  SETTINGS_PROFILE = 'settings.profile',
+  SETTINGS_SETTINGS = 'settings.settings',
+  SETTINGS_ADD_VALUE = 'settings.addValue',
+  SETTINGS_WALLET = 'settings.wallet',
+
   GENERAL_YOUR_LOCATION = 'general.yourLocation',
   GENERAL_ORDER_FAVORITE_FOOD = 'general.orderFavoriteFood',
   GENERAL_CITY = 'general.city',
   GENERAL_SEE_MORE = 'general.seeMore',
   GENERAL_NOTHING_TO_SEE = 'general.empty',
   GENERAL_SAVE = 'general.save',
+  GENERAL_CURRENCY = 'general.currency',
+  GENERAL_LANGUAGE = 'general.language',
 }

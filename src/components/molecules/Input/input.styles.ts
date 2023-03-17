@@ -11,7 +11,7 @@ export const Container = styled(Controller)``;
 export const Input = styled(TextInput)<InputStyleProps>`
   background-color: ${({theme}) => theme.colors.background};
   border-color: ${({theme, error}) =>
-    error ? theme.colors.status.danger : theme.colors.light_text};
+    error ? theme.colors.status.danger : theme.colors.shape200};
   border-width: ${RFValue(2)}px;
   width: 100%;
 

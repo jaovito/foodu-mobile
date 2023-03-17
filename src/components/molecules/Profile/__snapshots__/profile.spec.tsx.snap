@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profile /> should be able to match with snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 31,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <Image
+    onError={[Function]}
+    resizeMode="cover"
+    source={
+      {
+        "uri": "http://",
+      }
+    }
+    style={
+      [
+        {
+          "borderColor": "#E83F5B",
+          "borderRadius": 125,
+          "borderWidth": 6,
+          "height": 157,
+          "width": 157,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {},
+      ]
+    }
+  >
+    <Text
+      fontWeight="semiBold"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_600SemiBold",
+            "fontSize": 31,
+          },
+          {
+            "fontSize": 31,
+          },
+        ]
+      }
+    >
+      John Doe
+    </Text>
+    <Text
+      fontWeight="regular"
+      numberOfLines={1}
+      style={
+        [
+          {
+            "color": "#0D0D0D",
+            "fontFamily": "Poppins_400Regular",
+            "fontSize": 31,
+          },
+          {},
+        ]
+      }
+    >
+      johndoe@example.com
+    </Text>
+  </View>
+</View>
+`;

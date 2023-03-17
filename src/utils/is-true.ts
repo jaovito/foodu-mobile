@@ -1,7 +1,7 @@
 /**
  *
  * Convert booleans values, considering the cases that I understand how true and false.
- * Exemplo: Empty arrays and objects, we consider false.
+ * Exemple: Empty arrays and objects, we consider false.
  *
  * @param  param - Can be any value
  *

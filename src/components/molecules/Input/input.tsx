@@ -44,7 +44,7 @@ export const Input = ({
               onChangeText={onChange}
               value={value}
               placeholder={placeholder}
-              type="cel-phone"
+              type={mask.type || 'cel-phone'}
               options={mask}
               error={!!error}
               {...rest}

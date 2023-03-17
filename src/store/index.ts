@@ -38,6 +38,18 @@ const RootStore = types
         console.log(`err: ${err}`);
       }
     }),
+    signOut: flow(function* () {
+      try {
+        self.token = null;
+        self.user = null;
+
+        yield AsyncStorage.removeItem('@foodu:user');
+        yield AsyncStorage.removeItem('@foodu:token');
+        yield AsyncStorage.removeItem('@foodu:expiresIn');
+      } catch (err) {
+        console.log(`err: ${err}`);
+      }
+    }),
     setLoading: (value: boolean) => {
       self.isLoading = value;
     },

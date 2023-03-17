@@ -21,8 +21,8 @@ export const Container = styled.View`
 
 export const ImageContainer = styled.View`
   margin-right: ${RFValue(8)}px;
-  height: ${RFValue(100)}px;
-  width: ${RFValue(100)}px;
+  height: ${RFValue(90)}px;
+  width: ${RFValue(90)}px;
 `;
 
 export const CartImage = styled(CCartImage)`
@@ -51,8 +51,9 @@ export const Description = styled(Text)`
 export const PriceContainer = styled.View`
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
   width: 100%;
-  gap: ${RFValue(16)}px;
+  gap: ${RFValue(8)}px;
 
   margin-top: ${RFValue(8)}px;
 `;
@@ -63,7 +64,7 @@ export const ActionButtons = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: ${RFValue(8)}px;
+  gap: ${RFValue(4)}px;
 `;
 
 export const PrimaryButton = styled(CPrimaryButton)`

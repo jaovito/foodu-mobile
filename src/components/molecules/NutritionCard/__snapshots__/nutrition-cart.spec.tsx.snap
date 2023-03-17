@@ -48,7 +48,7 @@ exports[`<NutritionCard /> tests should be able to match with the snapshot 1`] =
         },
         {
           "color": "#0D0D0D",
-          "fontSize": 35,
+          "fontSize": 31,
         },
       ]
     }

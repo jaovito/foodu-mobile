@@ -98,6 +98,13 @@ export default {
 
     addCart: 'Add to Cart',
   },
+  settings: {
+    wallet: 'Wallet',
+    location: 'Location',
+    profile: 'Profile',
+    settings: 'Settings',
+    addValue: 'Add value',
+  },
   general: {
     yourLocation: 'Your Location',
     orderFavoriteFood: 'Order Your \nFavorite Food',
@@ -105,6 +112,8 @@ export default {
     seeMore: 'See more',
     empty: 'Nothing to see',
     save: 'Salvar',
+    currency: 'USD',
+    language: 'en-US',
   },
   errors: {
     generic: 'An error occurred, please try again later',

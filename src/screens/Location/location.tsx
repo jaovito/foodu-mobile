@@ -121,13 +121,13 @@ export const Location = observer(() => {
 
   const onSave = useCallback(async () => {
     if (coordsLocation) {
-      await changeLocation(coordsLocation);
+      await changeLocation({...coordsLocation, address});
       await changeIsSavedLocation(true);
       navigate('Restaurants');
     } else {
       Alert.alert('Escolha seu endereço');
     }
-  }, [coordsLocation, changeLocation, navigate]);
+  }, [coordsLocation, changeLocation, navigate, address]);
 
   return (
     <>

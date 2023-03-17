@@ -22,7 +22,7 @@ export const CartTemplate = ({
 
       {isTrue(cart) && (
         <Button onPress={onSave} {...buttonProps}>
-          {translate(LanguagePaths.GENERAL_SAVE)}
+          {translate(LanguagePaths.CART_SUBMIT)}
         </Button>
       )}
     </Container>

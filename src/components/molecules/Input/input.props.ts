@@ -1,6 +1,9 @@
 import {Control} from 'react-hook-form';
 import {TextInputProps} from 'react-native';
-import {TextInputMaskOptionProp} from 'react-native-masked-text';
+import {
+  TextInputMaskOptionProp,
+  TextInputMaskTypeProp,
+} from 'react-native-masked-text';
 
 type Fields = any;
 
@@ -10,7 +13,9 @@ export interface InputProps extends TextInputProps {
   label: string;
   name: string;
   error?: string;
-  mask?: TextInputMaskOptionProp;
+  mask?: TextInputMaskOptionProp & {
+    type?: TextInputMaskTypeProp;
+  };
 }
 
 export interface InputStyleProps {

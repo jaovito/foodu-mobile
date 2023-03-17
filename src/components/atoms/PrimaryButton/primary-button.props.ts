@@ -1,6 +1,6 @@
-import {TouchableOpacityProps} from 'react-native';
+import {BorderlessButtonProps} from 'react-native-gesture-handler';
 
-export interface PrimaryButtonProps extends TouchableOpacityProps {
+export interface PrimaryButtonProps extends BorderlessButtonProps {
   iconName: string;
   color?: string;
 }

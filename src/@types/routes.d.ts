@@ -11,6 +11,7 @@ export type RootStackParamList = {
   SignUp: undefined;
   Tab: TabRoute<{id: string}>;
   Food: {id: string};
+  AddValue: undefined;
 };
 
 export type RootDrawerParamList = {

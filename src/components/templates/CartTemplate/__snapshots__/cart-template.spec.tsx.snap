@@ -114,9 +114,9 @@ exports[`<CartTemplate /> should match with snapshot 1`] = `
             style={
               [
                 {
-                  "height": 196,
+                  "height": 177,
                   "marginRight": 16,
-                  "width": 196,
+                  "width": 177,
                 },
               ]
             }
@@ -237,7 +237,8 @@ exports[`<CartTemplate /> should match with snapshot 1`] = `
                   {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "gap": 31,
+                    "gap": 16,
+                    "justifyContent": "flex-end",
                     "marginTop": 16,
                     "width": "100%",
                   },
@@ -265,7 +266,7 @@ exports[`<CartTemplate /> should match with snapshot 1`] = `
                     {
                       "alignItems": "center",
                       "flexDirection": "row",
-                      "gap": 16,
+                      "gap": 8,
                       "justifyContent": "center",
                     },
                   ]
@@ -473,9 +474,9 @@ exports[`<CartTemplate /> should match with snapshot 1`] = `
             style={
               [
                 {
-                  "height": 196,
+                  "height": 177,
                   "marginRight": 16,
-                  "width": 196,
+                  "width": 177,
                 },
               ]
             }
@@ -596,7 +597,8 @@ exports[`<CartTemplate /> should match with snapshot 1`] = `
                   {
                     "alignItems": "center",
                     "flexDirection": "row",
-                    "gap": 31,
+                    "gap": 16,
+                    "justifyContent": "flex-end",
                     "marginTop": 16,
                     "width": "100%",
                   },
@@ -624,7 +626,7 @@ exports[`<CartTemplate /> should match with snapshot 1`] = `
                     {
                       "alignItems": "center",
                       "flexDirection": "row",
-                      "gap": 16,
+                      "gap": 8,
                       "justifyContent": "center",
                     },
                   ]
@@ -871,7 +873,7 @@ exports[`<CartTemplate /> should match with snapshot 1`] = `
         ]
       }
     >
-      general.save
+      cart.submit
     </Text>
   </RNGestureHandlerButton>
 </View>

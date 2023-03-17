@@ -55,7 +55,7 @@ describe('<CartTemplate />', () => {
       />,
     );
 
-    const button = await findByText(translate(LanguagePaths.GENERAL_SAVE));
+    const button = await findByText(translate(LanguagePaths.CART_SUBMIT));
     fireEvent.press(button);
 
     expect(mock.cartTemplate.onSave).toHaveBeenCalled();

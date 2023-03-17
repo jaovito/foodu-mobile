@@ -12,6 +12,11 @@ import {cartStore} from './store/cart.mock';
 import {cartCard} from './components/molecules/cart-card.mock';
 import {cartList} from './components/organisms/cart-list.mock';
 import {cartTemplate} from './components/templates/cart-template.mock';
+import {profile} from './components/molecules/profile.mock';
+import {optionCard} from './components/molecules/option-card.mock';
+import {optionList} from './components/organisms/option-list.mock';
+import {settingsTemplate} from './components/templates/settings-template.mock';
+import {registerValidator} from './validators/register-validator.mock';
 
 export const mock = {
   buyFoodCard,
@@ -21,6 +26,7 @@ export const mock = {
   nutritionCard,
   locationValidator,
   loginValidator,
+  registerValidator,
   headerImage,
   map,
   foodColumnList,
@@ -28,4 +34,8 @@ export const mock = {
   cartCard,
   cartList,
   cartTemplate,
+  profile,
+  optionCard,
+  optionList,
+  settingsTemplate,
 };

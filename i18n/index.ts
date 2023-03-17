@@ -15,9 +15,16 @@ const normalizeTranslate = {
 
 // Função responsável por adquirir o idioma utilizado no device
 const getLanguageByDevice = (): keyof typeof normalizeTranslate => {
-  return Platform.OS === 'ios'
-    ? NativeModules?.SettingsManager?.settings?.AppleLocale // Adquire o idioma no device iOS
-    : NativeModules.I18nManager.localeIdentifier; // Adquire o idioma no device Android
+  if (
+    Platform.OS === 'ios' &&
+    NativeModules?.SettingsManager?.settings?.AppleLocale
+  ) {
+    return NativeModules?.SettingsManager?.settings?.AppleLocale;
+  } else if (NativeModules?.I18nManager?.localeIdentifier) {
+    return NativeModules.I18nManager.localeIdentifier;
+  }
+
+  return 'en'; // Adquire o idioma no device Android
 };
 
 const I18n = new i18n(locales);

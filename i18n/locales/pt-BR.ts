@@ -99,6 +99,13 @@ export default {
   cart: {
     submit: 'Comprar',
   },
+  settings: {
+    wallet: 'Carteira',
+    location: 'Localização',
+    profile: 'Perfil',
+    settings: 'Configurações',
+    addValue: 'Adicionar valor',
+  },
   general: {
     yourLocation: 'Sua localização',
     orderFavoriteFood: 'Peça Sua \nComida Favorita',
@@ -106,6 +113,8 @@ export default {
     seeMore: 'Ver mais',
     empty: 'Nada para mostrar',
     save: 'Salvar',
+    currency: 'BRL',
+    language: 'pt-BR',
   },
   errors: {
     generic: 'Houve um erro, tente novamente mais tarde',

@@ -8,8 +8,8 @@ import HomeIcon from '../assets/home.svg';
 import ListIcon from '../assets/list.svg';
 import CartIcon from '../assets/cart.svg';
 import UserIcon from '../assets/user.svg';
-import {Location} from '@screens/Location';
 import {RFValue} from 'react-native-responsive-fontsize';
+import {Settings} from '@screens/Settings';
 
 const Tab = createBottomTabNavigator<RootDrawerParamList>();
 
@@ -60,7 +60,7 @@ export default function TabRoutes() {
 
       <Tab.Screen
         name="Settings"
-        component={Location}
+        component={Settings}
         options={{
           tabBarIcon: ({size, focused, color}) => (
             <UserIcon width={size} fill={color} focusable={focused} />
