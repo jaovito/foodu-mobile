@@ -116,6 +116,7 @@ exports[`<OptionList /> should match with snapshot 1`] = `
                 [
                   {
                     "bottom": 3,
+                    "color": "#0D0D0D",
                     "fontSize": 31,
                     "marginRight": 16,
                   },
@@ -159,6 +160,7 @@ exports[`<OptionList /> should match with snapshot 1`] = `
               },
               [
                 {
+                  "color": "#0D0D0D",
                   "fontSize": 35,
                 },
               ],
@@ -257,6 +259,7 @@ exports[`<OptionList /> should match with snapshot 1`] = `
                 [
                   {
                     "bottom": 3,
+                    "color": "#0D0D0D",
                     "fontSize": 31,
                     "marginRight": 16,
                   },
@@ -300,6 +303,7 @@ exports[`<OptionList /> should match with snapshot 1`] = `
               },
               [
                 {
+                  "color": "#0D0D0D",
                   "fontSize": 35,
                 },
               ],
@@ -398,6 +402,7 @@ exports[`<OptionList /> should match with snapshot 1`] = `
                 [
                   {
                     "bottom": 3,
+                    "color": "#0D0D0D",
                     "fontSize": 31,
                     "marginRight": 16,
                   },
@@ -441,6 +446,7 @@ exports[`<OptionList /> should match with snapshot 1`] = `
               },
               [
                 {
+                  "color": "#0D0D0D",
                   "fontSize": 35,
                 },
               ],

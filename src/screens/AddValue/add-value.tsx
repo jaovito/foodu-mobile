@@ -36,7 +36,18 @@ export const AddValue = () => {
   ];
 
   const onSubmit = (data: IFormValues) => {
-    console.log(data);
+    if (translate(LanguagePaths.GENERAL_LANGUAGE) === 'pt-BR') {
+      const valueWithoutCurrency = data.value.replace('R$ ', ''); // remove o R$
+      const parsedValue = valueWithoutCurrency.replace(',', '.'); // substitui a vírgula por um ponto
+      const floatValue = parseFloat(parsedValue); // converte para número
+
+      return console.log(floatValue); // exibe o número 100.09 no console
+    }
+
+    const parsedValue = data.value.replace('$ ', ''); // remove o R$
+    const floatValue = parseFloat(parsedValue); // converte para número
+
+    return console.log(floatValue); // exibe o número 100.09 no console
   };
 
   return <AddValueTemplate inputs={inputs} onSubmit={handleSubmit(onSubmit)} />;

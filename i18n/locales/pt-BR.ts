@@ -31,6 +31,10 @@ export default {
         length: 'Digite uma senha com pelo menos 6 digitos',
       },
     },
+    errors: {
+      500: 'Tivemos um problema, tente novamente mais tarde',
+      400: 'Essa conta não existe, verifique seu e-mail e senha e tente novamente',
+    },
 
     buttonText: 'Entrar',
   },

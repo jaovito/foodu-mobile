@@ -26,10 +26,12 @@ export const Icon = styled(Feather)`
   bottom: ${RFValue(1.3)}px;
 
   margin-right: ${RFValue(8)}px;
+  color: ${({theme}) => theme.colors.oil};
 `;
 
 export const ArrowRight = styled(Feather)`
   font-size: ${RFValue(18)}px;
+  color: ${({theme}) => theme.colors.oil};
 `;
 
 export const Title = styled(Text)`

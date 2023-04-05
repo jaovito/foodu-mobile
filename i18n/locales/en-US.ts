@@ -30,6 +30,10 @@ export default {
         length: 'Please enter a password must be at least 6 characters',
       },
     },
+    errors: {
+      500: 'We have some errors, please try again later',
+      400: 'Account does not exist, please check your credentials and try again',
+    },
 
     buttonText: 'SignIn',
   },

@@ -13,6 +13,7 @@ import {LanguagePaths} from '@translations/enumns/LanguagePaths';
 import {api} from '../../services/api';
 import {store} from '../../store';
 import {Loading} from '@components/atoms/Loading';
+import {getError} from '@utils/get-error';
 
 export const SignIn = ({}: LandingProps) => {
   const {navigate} = useNavigate();
@@ -21,6 +22,7 @@ export const SignIn = ({}: LandingProps) => {
     control,
     handleSubmit,
     formState: {errors},
+    setError,
   } = useForm<IFormValues>({
     resolver: yupResolver(loginValidator),
   });
@@ -34,6 +36,23 @@ export const SignIn = ({}: LandingProps) => {
       navigate('Location');
     } catch (err) {
       console.log(err);
+      const error = getError(err);
+      console.log(error);
+
+      switch (error.response?.status) {
+        case 400:
+          return setError('password', {
+            message: translate(LanguagePaths.SIGNIN_ERROR_400),
+          });
+        case 401:
+          return setError('password', {
+            message: translate(LanguagePaths.SIGNIN_ERROR_400),
+          });
+        case 500:
+          return setError('password', {
+            message: translate(LanguagePaths.SIGNIN_ERROR_500),
+          });
+      }
     } finally {
       setIsLoading(false);
     }

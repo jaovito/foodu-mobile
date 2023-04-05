@@ -14,6 +14,9 @@ export enum LanguagePaths {
   SIGNIN_PASSWORD_ERROR_LENGTH = 'signIn.password.errors.length',
   SIGNIN_BUTTON_TEXT = 'signIn.buttonText',
 
+  SIGNIN_ERROR_500 = 'signIn.errors.500',
+  SIGNIN_ERROR_400 = 'signIn.errors.400',
+
   SIGNUP_TITLE = 'signUp.title',
   SIGNUP_SIGN_IN = 'signUp.alreadyHaveAccount',
   SIGNUP_EMAIL_LABEL = 'signUp.email.label',

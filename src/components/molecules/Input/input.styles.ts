@@ -10,6 +10,7 @@ export const Container = styled(Controller)``;
 
 export const Input = styled(TextInput)<InputStyleProps>`
   background-color: ${({theme}) => theme.colors.background};
+  color: ${({theme}) => theme.colors.oil};
   border-color: ${({theme, error}) =>
     error ? theme.colors.status.danger : theme.colors.shape200};
   border-width: ${RFValue(2)}px;
@@ -46,6 +47,7 @@ export const TextInputMask = styled(RNTextInputMask)<InputStyleProps>`
     error ? theme.colors.status.danger : theme.colors.shape200};
   border-width: ${RFValue(2)}px;
   width: 100%;
+  color: ${({theme}) => theme.colors.oil};
 
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.02);
 
