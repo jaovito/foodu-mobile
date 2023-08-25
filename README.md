@@ -33,6 +33,7 @@ Saving the location, you are already done, now you can see the restaurants resul
 - Unit/Component Testing (Testing Library + Jest)
 - Testing Coverage (With Jest)
 - React Native Maps 🗺️
+- Mapbox API
 - Internationalization for english and portuguese (i18n)
 
 ## Other Methodologies
@@ -59,7 +60,7 @@ After installing the packages, we need to configure the environment variables fo
 cp .env.example.json .env.json
 ```
 
-After you've created the file, you need to open the file and insert your variables, if you don't want to run the server in your machine, you can just ignore this step.
+After you've created the file, you need to open the file and insert your variables, if you don't want to run the server in your machine, you can just ignore this step. But you will need a mapbox API KEY.
 
 After that, you can follow the instructions below for installing configure the project into your environment (iOS or Android).
 
