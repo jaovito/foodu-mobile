@@ -1,3 +1,4 @@
+import {ActivityIndicator as RNActivityIndicator} from 'react-native';
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
@@ -13,4 +14,4 @@ export const Container = styled.View`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-export const ActivityIndicator = styled.ActivityIndicator``;
+export const ActivityIndicator = styled(RNActivityIndicator)``;
