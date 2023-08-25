@@ -6,6 +6,17 @@ Foodu is a project developed by me, alone, I used it to study some interesting t
 
 In this project I tried to use the best things that I could learn from my job experience and the companies that I've been working on.
 
+## Topics
+- [Welcome to the Foodu project](#welcome-to-the-foodu-project)
+  - [Topics](#topics)
+  - [About the project](#about-the-project)
+  - [Technologies 🚀](#technologies-)
+  - [Other Methodologies](#other-methodologies)
+  - [Installation 💻](#installation-)
+    - [Android](#android)
+    - [iOS](#ios)
+
+
 ## About the project
 In this project you can buy some food, add to your cart, favorite the food, and set your location, based on your location, the server will return the restaurants near you, you can choose the distance to find the restaurant near you setting the distance in kilometers. The server will calculate the distance based on the Haversine Formula and then return the restaurants.
 
