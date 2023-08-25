@@ -1,4 +1,7 @@
 # Welcome to the Foodu project
+
+https://github.com/jaovito/foodu-mobile/assets/61637710/09fd6946-5291-4a02-9914-045d1e44d8e3
+
 Foodu is a project developed by me, alone, I used it to study some interesting things about maps, geolocation, Haversine calculation, and other things. It's only a repository project and you can contribute or analyze it yourself, I use many different technologies to build this project, but I don't complicated things because it's a small project, and sometimes the complicated things complicate the codes haha.
 
 In this project I tried to use the best things that I could learn from my job experience and the companies that I've been working on.
@@ -16,8 +19,9 @@ Saving the location, you are already done, now you can see the restaurants resul
 - Mobx State Tree (Global State Tree)
 - GraphQL (With URQL)
 - React Native Maps
-- Unit/Component Testing (With Jest)
+- Unit/Component Testing (Testing Library + Jest)
 - Testing Coverage (With Jest)
+- React Native Maps 🗺️
 - Internationalization for english and portuguese (i18n)
 
 ## Other Methodologies
@@ -30,7 +34,7 @@ First you need to clone the server repository and configure then, if you don't k
 Now you can clone this repository with the following command:
 
 ```sh
-$ git clone https://github.com/jaovito/f
+$ git clone https://github.com/jaovito/f](https://github.com/jaovito/foodu-mobile.git
 ```
 
 After cloning the repository, you need to run the following command to install the packages inside the project directory:
@@ -70,22 +74,3 @@ $ npm run ios # or yarn ios
 ```
 
 Congratulations 👏🎉, the app was successfully installed.
-
-
-## App Flows
-Here you will see the app flows, some examples of how you can configure and use the app.
-
-### Login
-The first screen of the app is a simple onboarding, here you will see some information about the application, pressing the arrow button you go to login. After you can register your account, and then, login.
-
-// TODO: Put video or gif here
-
-### Location
-Once time you have registered and logged in, you can configure your location to find restaurants near your location. Here the server uses the Haversine formula to do that. After you type your address and select the correct address, you need to confirm the location in the map.
-
-// TODO: Put video or gif here
-
-### Restaurants and Foods
-After you have configured your location, you will see the restaurants near your location, now you can select the restaurant and see their foods, add some food to the cart and buy it. You can add the food to favorites too.
-
-// TODO: Put video or gif here
