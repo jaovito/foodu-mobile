@@ -4,7 +4,7 @@ https://github.com/jaovito/foodu-mobile/assets/61637710/09fd6946-5291-4a02-9914-
 
 Foodu is a project developed by me, alone, I used it to study some interesting things about maps, geolocation, Haversine calculation, and other things. It's only a repository project and you can contribute or analyze it yourself, I use many different technologies to build this project, but I don't complicated things because it's a small project, and sometimes the complicated things complicate the codes haha.
 
-In this project I tried to use the best things that I could learn from my job experience and the companies that I've been working on.
+In this project I tried to use the best things that I could learn from my job experience, studies and the companies that I've been working on.
 
 ## Topics
 - [Welcome to the Foodu project](#welcome-to-the-foodu-project)
@@ -29,7 +29,6 @@ Saving the location, you are already done, now you can see the restaurants resul
 - Flipper (Debugger)
 - Mobx State Tree (Global State Tree)
 - GraphQL (With URQL)
-- React Native Maps
 - Unit/Component Testing (Testing Library + Jest)
 - Testing Coverage (With Jest)
 - React Native Maps 🗺️
