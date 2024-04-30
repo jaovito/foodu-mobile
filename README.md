@@ -40,7 +40,7 @@ Saving the location, you are already done, now you can see the restaurants resul
 - Clean Architecture (Some things only)
 
 ## Installation 💻
-First you need to clone the server repository and configure then, if you don't know how configure or you don't understand, you can use the following test server url: `foodu-server-production.up.railway.app` (you need to put it in the .env.json file, I will explain later).
+First you need to clone the server repository and configure then.
 
 Now you can clone this repository with the following command:
 
